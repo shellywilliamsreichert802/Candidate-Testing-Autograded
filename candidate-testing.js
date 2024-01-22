@@ -12,7 +12,7 @@ let candidateAnswer = "";
 
 
 //TODO: Variables for Part 2
-let questions = ["Who was the first American woman in space?", "True or false: 5 kilometer == 5000 meters?", "(5 + 3)/2 * 10 = ?", "Given the array [8, 'Orbit', 'Trajectory', 45]', what entry is at index 2?" , "What is the minimum crew size for the ISS?"];
+let questions = ["Who was the first American woman in space?", "True or false: 5 kilometer == 5000 meters?", "(5 + 3)/2 * 10 = ?", "Given the array [8, 'Orbit', 'Trajectory', 45]', what entry is at index 2?", "What is the minimum crew size for the ISS?"];
 let correctAnswers = ["Sally Ride" , "true", "40", "Trajectory", 3];
 let candidateAnswers = [""];
 
@@ -26,21 +26,19 @@ function askQuestion() {
 for (let i = 0; i < questions.length; i++) {
   console.log(questions[i]);
 }
+
 }
 for (let i = 0; i < candidateAnswers.length; i++) {
-   console.log(candidateAnswers[i]);
-   
+   console.log(candidateAnswers[i]);  
 }
 
 function gradeQuiz(candidateAnswers) {
-
   // TODO 1.2c: Let the candidate know if they have answered the question correctly or incorrectly /  console.log("Correct Answer: Sally Ride");
 // 
-if (candidateAnswers == correctAnswers) 
-{ 
-  console.log("You are correct! The answers are" + correctAnswers);
+if (candidateAnswers == correctAnswers) { 
+  console.log(`You are correct! The answers are ${correctAnswers}`);
 } else {
-  console.log("You answered: " + candidateAnswers)
+  console.log(`Incorrect you answered: ${candidateAnswers}`);
 }
 
   let grade;  
