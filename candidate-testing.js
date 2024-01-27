@@ -47,8 +47,8 @@ let score = grade / (questions.length) * 100;
 if (score >= 80) {
   console.log(`Congratulations! You received a ${score}%`);
 } else {
-  console.log(`${score}%. Please try again.`);
-  }  return grade;
+  console.log(`You received a ${score}%. Please try again.`);
+  }  return score;
 } 
 
 function runProgram() {
